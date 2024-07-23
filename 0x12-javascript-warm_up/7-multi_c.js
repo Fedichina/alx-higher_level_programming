@@ -1,10 +1,9 @@
 #!/usr/bin/node
-function printCIsFun(x){
-	if(typeOf x !== 'number'){
-		console.log('Missing number of occurrences');
-		retun;
-	}
-	for(x = 0; x < num; x++){
-		console.log('C is fun');
-	}
+const x = process.argv[2];
+if (x === undefined || isNaN(parseInt(x))) {
+  console.log('Missing number of occurrences');
+} else {
+  for (let i = 0; i < parseInt(x); i++) {
+    console.log('C is fun');
+  }
 }
